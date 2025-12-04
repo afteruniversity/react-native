@@ -6,7 +6,6 @@ interface ResultImcProps {
   messageResultImc: string;
 }
 
-// Aplicamos a interface aqui
 export default function ResultImc(props: ResultImcProps) {
   return (
     <View>

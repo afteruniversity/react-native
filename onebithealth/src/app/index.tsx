@@ -1,12 +1,15 @@
-import { View, StyleSheet } from "react-native";
+import React from "react";
+import { View, StyleSheet, StatusBar } from "react-native";
 import Title from "@/components/Title";
-import Main from "@/components/Main";
+import Form from "@/components/Form";
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor="#292929" />
+      
       <Title />
-      <Main />
+      <Form />
     </View>
   );
 }
@@ -14,14 +17,6 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 32,
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 16,
-  },
-  title: {
-    color: "#33556bff",
-    fontSize: 24,
-    fontWeight: "bold",
+    backgroundColor: "#fffdfdff"
   },
 });
